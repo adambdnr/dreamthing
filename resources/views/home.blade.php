@@ -10,10 +10,30 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
     <link href="css/app.css" rel="stylesheet" type="text/css">
-
-
 </head>
 <body>
-    <h1>asd</h1>
+<div class="container-fluid">
+    <div class="row wrapper">
+        <div class="col-8 left-side">
+            @if(count($dreams) > 0)
+                @foreach($dreams as $dream)
+                    <p class="dream-id">Álom {{sprintf("%03d", $dream->id)}}</p>
+                    <p class="dream-body">{{$dream->dream}}</p>
+                @endforeach
+            @endif
+            <p class="last">asd</p>
+        </div>
+        <div class="col-4 right-side">
+            <div class="d-flex justify-content-between">
+                <span></span>
+                <button class="about-button">?</button>
+                <button class="add-button">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script data-cfasync="false" src="js/app.js"></script>
+
 </body>
 </html>

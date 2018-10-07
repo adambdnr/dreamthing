@@ -3,6 +3,87 @@
   src: url("/fonts/OPPOSITE-BLACK.otf") format("opentype");
 }
 
-h1 {
-  font-family: opposit-black;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body
+{
+  height: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 4rem;
+  font-family: opposit-black !important;
+  color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  outline:none;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+  font-size: 3rem;
+  font-family: opposit-black !important;
+  margin-bottom: 0;
+}
+
+.container-fluid {
+  padding: 0 158px;
+}
+
+.dream-body {
+  margin-bottom: 50px;
+}
+
+.left-side {
+  overflow: auto;
+}
+
+.right-side {
+  height: 100vh;
+  width: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: -100px;
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
+.left-side,
+.right-side {
+  overflow: auto;
+  height: auto;
+  padding: .5rem;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
+.left-side::-webkit-scrollbar,
+.right-side::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
 }

@@ -13894,6 +13894,7 @@ module.exports = __webpack_require__(43);
  */
 
 __webpack_require__(13);
+__webpack_require__(48);
 
 window.Vue = __webpack_require__(36);
 
@@ -47413,6 +47414,34 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+    startScrollDown();
+});
+
+$(window).on('beforeunload', function () {
+    goToTop();
+});
+
+function startScrollDown() {
+
+    $(".left-side").animate({
+        scrollTop: $('.left-side')[0].scrollHeight - $('.left-side')[0].clientHeight
+    }, 10000);
+}
+
+function goToTop() {
+    $(document).scrollTop(0);
+    console.log('TOP');
+}
 
 /***/ })
 /******/ ]);
