@@ -3,6 +3,38 @@
   src: url("/fonts/OPPOSITE-BLACK.otf") format("opentype");
 }
 
+.rotate {
+
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+
+  /* IE */
+  -ms-transform: rotate(90deg);
+
+  /* Opera */
+  -o-transform: rotate(90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.position-vertical-text {
+  top: 50%;
+  left: 50%;
+}
+
+.position-percentage {
+  bottom: 0;
+  right: 0;
+}
+
+.blue-text {
+  color: blue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,17 +45,17 @@ html, body
   height: 100%;
 }
 
-button {
-  background: none;
-  border: none;
+a {
   font-size: 4rem;
   font-family: opposit-black !important;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
   color: white;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  box-shadow: none;
-  outline:none;
+  text-decoration: none;
   cursor: pointer;
 }
 

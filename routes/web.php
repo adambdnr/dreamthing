@@ -14,5 +14,11 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/upload', function () {
+    return view('upload');
+});
 
 Route::get('/', 'DreamsController@getDreams');

@@ -23,12 +23,14 @@
             @endif
             <p class="last">asd</p>
         </div>
-        <div class="col-4 right-side">
+        <div class="col-4 right-side position-relative">
             <div class="d-flex justify-content-between">
                 <span></span>
-                <button class="about-button">?</button>
-                <button class="add-button">+</button>
+                <a href="/dreamApp/public/about" class="about-button">?</a>
+                <a href="/upload" class="add-button">+</a>
             </div>
+            <p class="blue-text float-right position-absolute rotate position-vertical-text">Termeloeszkozok</p>
+            <p class="position-absolute position-percentage blue-text">23%</p>
         </div>
     </div>
 </div>
