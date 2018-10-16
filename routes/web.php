@@ -22,3 +22,5 @@ Route::get('/upload', function () {
 });
 
 Route::get('/', 'DreamsController@getDreams');
+
+Route::post('upload/submit', 'DreamsController@submit');

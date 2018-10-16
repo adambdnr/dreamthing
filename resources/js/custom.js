@@ -1,17 +1,19 @@
 $(document).ready( function() {
-    startScrollDown();
+    //startScrollDown();
 });
 
 $(window).on('beforeunload', function(){
     goToTop();
 });
 
-function startScrollDown() {
+    function startScrollDown() {
 
-    $(".left-side").animate({
-        scrollTop: $('.left-side')[0].scrollHeight - $('.left-side')[0].clientHeight
-    }, 10000);
-}
+        let leftSide = $('.left-side');
+
+        leftSide.animate({
+            scrollTop: leftSide[0].scrollHeight
+        }, 1000000, "linear");
+    }
 
 function goToTop() {
     $(document).scrollTop(0);

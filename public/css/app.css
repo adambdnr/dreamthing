@@ -10469,6 +10469,8 @@ a.text-dark:focus {
 @font-face {
   font-family: opposit-black;
   src: url("/fonts/OPPOSITE-BLACK.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 .rotate {
@@ -10508,12 +10510,20 @@ body {
   height: 100%;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 a {
-  font-size: 4rem;
+  font-size: 6.2rem;
   font-family: opposit-black !important;
   color: #FFFFFF;
   text-decoration: none;
   cursor: pointer;
+}
+
+a:not([href]):not([tabindex]) {
+  color: white;
 }
 
 a:hover {
@@ -10524,7 +10534,7 @@ a:hover {
 
 p {
   color: white;
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: opposit-black !important;
   margin-bottom: 0;
 }
@@ -10538,7 +10548,7 @@ p {
 }
 
 .left-side {
-  overflow: auto;
+  line-height: 1.4;
 }
 
 .right-side {
@@ -10561,6 +10571,11 @@ p {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   will-change: overflow;
+}
+
+.highlight_match {
+  background-color: blue;
+  font-weight: bold;
 }
 
 .left-side,
@@ -10596,6 +10611,83 @@ p {
     top: -170%;
   }
 }
+
+.about-wrapper {
+  height: 80vh;
+  margin-top: 150px;
+  overflow: auto;
+}
+
+.about-text {
+  position: relative;
+  bottom: 0;
+  line-height: 1.4;
+}
+
+.medium-margin-left {
+  margin-left: 140px;
+}
+
+.outline {
+  color: black !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+textarea {
+  background-color: black;
+  color: blue;
+  width: 100%;
+  height: 300vw;
+  font-family: opposit-black;
+  font-size: 6rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  overflow: hidden;
+  background-image: linear-gradient(to right, black 10px, transparent 10px), linear-gradient(to left, black 10px, transparent 10px), linear-gradient(black 30px, white 30px, white 31px, black 31px);
+  background-size: 100% 100%, 100% 100%, 100% 96px;
+  line-height: 96px;
+  padding-top: 50px;
+}
+
+.form-control {
+  border: 0;
+  font-size: 6rem;
+  padding: 50px 0 0 0;
+  color: blue !important;
+}
+
+.form-control:focus {
+  border-color: black;
+}
+
+/*textarea {
+  background-color: black;
+  color: blue;
+  width: 100%;
+  height: 300vw;
+  font-family: opposit-black;
+  font-size: 5rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  overflow: hidden;
+
+  //background-image: -webkit-linear-gradient(to right, white 10px, transparent 10px), -webkit-linear-gradient(to left, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+  //background-image: -moz-linear-gradient(to right, white 10px, transparent 10px), -moz-linear-gradient(to left, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+  //background-image: -ms-linear-gradient(to right, white 10px, transparent 10px), -ms-linear-gradient(to left, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+  //background-image: -o-linear-gradient(to right, white 10px, transparent 10px), -o-linear-gradient(to left, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+  background-image: linear-gradient(to right, black 10px, transparent 10px), linear-gradient(to left, black 10px, transparent 10px), linear-gradient(black 30px, white 30px, white 31px, black 31px);
+  background-size: 100% 100%, 100% 100%, 100% 50px;
+  line-height: 50px;
+  padding-top: 31px;
+}*/
 
 .navbar-laravel {
   background-color: #fff;

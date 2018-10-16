@@ -35957,7 +35957,7 @@ module.exports = function spread(callback) {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-    startScrollDown();
+    //startScrollDown();
 });
 
 $(window).on('beforeunload', function () {
@@ -35966,9 +35966,11 @@ $(window).on('beforeunload', function () {
 
 function startScrollDown() {
 
-    $(".left-side").animate({
-        scrollTop: $('.left-side')[0].scrollHeight - $('.left-side')[0].clientHeight
-    }, 10000);
+    var leftSide = $('.left-side');
+
+    leftSide.animate({
+        scrollTop: leftSide[0].scrollHeight
+    }, 1000000, "linear");
 }
 
 function goToTop() {
@@ -47437,7 +47439,7 @@ if (false) {
 /* 44 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve '../fonts/OPPOSITE-BLACK.otf' in '/Users/adambodnar/Projects/dreamthing/resources/sass'\n    at factoryCallback (/Users/adambodnar/Projects/dreamthing/node_modules/webpack/lib/Compilation.js:282:40)\n    at factory (/Users/adambodnar/Projects/dreamthing/node_modules/webpack/lib/NormalModuleFactory.js:237:20)\n    at resolver (/Users/adambodnar/Projects/dreamthing/node_modules/webpack/lib/NormalModuleFactory.js:60:20)\n    at asyncLib.parallel (/Users/adambodnar/Projects/dreamthing/node_modules/webpack/lib/NormalModuleFactory.js:127:20)\n    at /Users/adambodnar/Projects/dreamthing/node_modules/async/dist/async.js:3888:9\n    at /Users/adambodnar/Projects/dreamthing/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/Users/adambodnar/Projects/dreamthing/node_modules/async/dist/async.js:1062:13)\n    at /Users/adambodnar/Projects/dreamthing/node_modules/async/dist/async.js:969:16\n    at /Users/adambodnar/Projects/dreamthing/node_modules/async/dist/async.js:3885:13\n    at resolvers.normal.resolve (/Users/adambodnar/Projects/dreamthing/node_modules/webpack/lib/NormalModuleFactory.js:119:22)\n    at onError (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/Resolver.js:65:10)\n    at loggingCallbackWrapper (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/adambodnar/Projects/dreamthing/node_modules/tapable/lib/Tapable.js:252:11)\n    at /Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:40:4\n    at loggingCallbackWrapper (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/adambodnar/Projects/dreamthing/node_modules/tapable/lib/Tapable.js:252:11)\n    at innerCallback (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/Resolver.js:144:11)\n    at loggingCallbackWrapper (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/adambodnar/Projects/dreamthing/node_modules/tapable/lib/Tapable.js:249:35)\n    at resolver.doResolve.createInnerCallback (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:44:6)\n    at loggingCallbackWrapper (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/Resolver.js:168:10)\n    at loggingCallbackWrapper (/Users/adambodnar/Projects/dreamthing/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/Users/adambodnar/Projects/dreamthing/node_modules/tapable/lib/Tapable.js:252:11)");
 
 /***/ })
 /******/ ]);
