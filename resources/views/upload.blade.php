@@ -12,22 +12,35 @@
     <link href="css/app.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-12 d-flex justify-content-between">
-            <a href="/" class="about-plus outline">+</a>
+        <div class="col-12 d-flex d-md-none justify-content-between narrow-div">
+            <a class="about-plus black-text blue-background">+</a>
             <div>
-                <a href="/about" class="about-questionmark">?</a>
-                <a href="/" class="about-arrow medium-margin-left">&uarr;</a>
+                <a class="about-arrow black-text blue-background smaller-margin-right">?</a>
+                <span></span>
             </div>
         </div>
     </div>
+
+
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 d-none d-md-flex justify-content-between">
+            <a class="about-plus outline">+</a>
+            <div>
+                <a class="about-questionmark outline small-margin-right">?</a>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12 position-relative">
             <form action="/upload/submit" method="post">
                 {{ csrf_field() }}
                 <textarea name="dream"></textarea>
-                <button type="submit">SUBMIT</button>
+                <button type="submit" class="submit-up-left position-absolute"><span class="down-arrow"></span></button>
             </form>
         </div>
     </div>

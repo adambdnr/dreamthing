@@ -1,5 +1,5 @@
 $(document).ready( function() {
-    //startScrollDown();
+    startScrollDown();
 });
 
 $(window).on('beforeunload', function(){

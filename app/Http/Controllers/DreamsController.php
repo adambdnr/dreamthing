@@ -22,7 +22,9 @@ class DreamsController extends Controller
     public function submit(Request $request) {
         $dreamEntry = new Dream();
         $dreamEntry->dream = $request->input('dream');
-        $dreamEntry->save();
+        if (strlen($dreamEntry->dream) > 300) {
+            $dreamEntry->save();
+        }
         return redirect('/')->with('status', 'INSERTED');
     }
 

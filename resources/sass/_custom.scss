@@ -1,6 +1,15 @@
 @font-face {
   font-family: opposit-black;
-  src: url("../fonts/OPPOSITE-BLACK.otf") format("opentype");
+  src: url("/fonts/OPPOSITE-BLACK.otf") format("opentype");
+  src: url('/fonts/OPPOSIT-BLACK.eot');
+  src: url('/fonts/OPPOSIT-BLACK.eot?') format('embedded-opentype'),
+
+  url('/fonts/OPPOSIT-BLACK.woff') format('woff'),
+  url('/fonts/OPPOSIT-BLACK.ttf') format('truetype'),
+  url('/fonts/OPPOSIT-BLACK.svg') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 .rotate {
@@ -24,15 +33,49 @@
 .position-vertical-text {
   top: 50%;
   left: 50%;
+  width: 100%;
 }
 
 .position-percentage {
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }
 
 .blue-text {
   color: blue;
+}
+
+.black-text {
+  color: black !important;
+}
+
+.blue-background {
+  background-color: blue;
+}
+
+.small-margin-left {
+  margin-left: 35px;
+}
+
+.small-margin-right {
+  margin-right: 100px;
+}
+
+.smaller-margin-right {
+  margin-right: 70px;
+}
+
+.small-padding {
+  padding: 0 15px;
+}
+
+.narrow-div {
+  padding-top: 10px;
+  line-height: 1;
+  margin-bottom: 25px;
+  a {
+    padding: 0 10px;
+  }
 }
 
 * {
@@ -74,20 +117,36 @@ p {
   margin-bottom: 0;
 }
 
-.container-fluid {
-  padding: 0 158px;
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
+
+button {
+  font-family: opposit-black !important;
+  font-size: 6.2rem;
+  color: white !important;
+}
+
+/*.container-fluid {
+  padding: 0 158px;
+}*/
 
 .dream-body {
   margin-bottom: 50px;
 }
 
 .left-side {
+  overflow: auto;
   line-height: 1.4;
 }
 
 .right-side {
-  height: 100vh;
   width: 100vh;
   position: relative;
   overflow: hidden;
@@ -112,8 +171,6 @@ p {
 
 .left-side,
 .right-side {
-  overflow: auto;
-  height: auto;
   padding: .5rem;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
@@ -136,8 +193,8 @@ p {
 //ABOUT
 
 .about-wrapper {
-  height: 80vh;
-  margin-top: 150px;
+  height: 75vh;
+  margin-top: 140px;
   overflow: auto;
 }
 
@@ -153,11 +210,46 @@ p {
 
 .outline {
   color: black !important;
+  cursor: default !important;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
 
+.black-arrow-up {
+  background: url("/images/blackarrow.png") no-repeat top left;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
 //UPLOAD
+
+.submit-up-left {
+  top: -100px;
+  right: 0;
+}
+
+.down-arrow {
+  background: url("/images/whitearrow.png") no-repeat top left;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.up-arrow {
+  background: url("/images/whitearrow.png") no-repeat top left;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
 
 textarea {
   background-color: black;
@@ -195,30 +287,134 @@ textarea {
   border-color: black;
 }
 
+@media (max-width: 575.98px) {
+  html {
+    font-size: 16%;
+  }
 
-//MOBILE
+  .submit-up-left {
+    top: -60px;
+    right: 0;
+  }
 
-/*textarea {
-  background-color: black;
-  color: blue;
-  width: 100%;
-  height: 300vw;
-  font-family: opposit-black;
-  font-size: 5rem;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  overflow: hidden;
+  .add-button {
+    margin: 0px 15px 0 35px;
+  }
+  .wrapper {
+    width: unset;
+    height: 90vh;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    width: 100%;
+    height: 80px;
+  }
+  .left-side {
+    line-height: 1.2;
+  }
 
-  //background-image: -webkit-linear-gradient(to right, white 10px, transparent 10px), -webkit-linear-gradient(to left, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-  //background-image: -moz-linear-gradient(to right, white 10px, transparent 10px), -moz-linear-gradient(to left, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-  //background-image: -ms-linear-gradient(to right, white 10px, transparent 10px), -ms-linear-gradient(to left, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-  //background-image: -o-linear-gradient(to right, white 10px, transparent 10px), -o-linear-gradient(to left, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-  background-image: linear-gradient(to right, black 10px, transparent 10px), linear-gradient(to left, black 10px, transparent 10px), linear-gradient(black 30px, white 30px, white 31px, black 31px);
-  background-size: 100% 100%, 100% 100%, 100% 50px;
-  line-height: 50px;
-  padding-top: 31px;
-}*/
+  .down-arrow {
+    background: url("/images/blackarrow.png") no-repeat top left;
+    background-color: blue;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  textarea {
+    background-color: black;
+    color: blue;
+    width: 100%;
+    height: 400vw;
+    font-family: opposit-black;
+    font-size: 5rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    overflow: hidden;
+
+    background-image: -webkit-linear-gradient(to right, black 10px, transparent 10px), -webkit-linear-gradient(to left, black 10px, transparent 10px), -webkit-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: -moz-linear-gradient(to right, black 10px, transparent 10px), -moz-linear-gradient(to left, black 10px, transparent 10px), -moz-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: -ms-linear-gradient(to right, black 10px, transparent 10px), -ms-linear-gradient(to left, black 10px, transparent 10px), -ms-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: -o-linear-gradient(to right, black 10px, transparent 10px), -o-linear-gradient(to left, black 10px, transparent 10px), -o-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: linear-gradient(to right, black 10px, transparent 10px), linear-gradient(to left, black 10px, transparent 10px), linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-size: 100% 100%, 100% 100%, 100% 50px;
+    line-height: 50px;
+    padding-top: 31px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 32.5%;
+  }
+
+  .submit-up-left {
+    top: -65px;
+    right: 0;
+  }
+
+  .add-button {
+    margin: 0 15px 0 35px;
+  }
+  .wrapper {
+    width: unset;
+    height: 90vh;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    width: 100%;
+    height: 80px;
+  }
+  .left-side {
+    line-height: 1.2;
+  }
+
+  textarea {
+    background-color: black;
+    color: blue;
+    width: 100%;
+    height: 400vw;
+    font-family: opposit-black;
+    font-size: 5rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    overflow: hidden;
+
+    background-image: -webkit-linear-gradient(to right, black 10px, transparent 10px), -webkit-linear-gradient(to left, black 10px, transparent 10px), -webkit-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: -moz-linear-gradient(to right, black 10px, transparent 10px), -moz-linear-gradient(to left, black 10px, transparent 10px), -moz-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: -ms-linear-gradient(to right, black 10px, transparent 10px), -ms-linear-gradient(to left, black 10px, transparent 10px), -ms-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: -o-linear-gradient(to right, black 10px, transparent 10px), -o-linear-gradient(to left, black 10px, transparent 10px), -o-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-image: linear-gradient(to right, black 10px, transparent 10px), linear-gradient(to left, black 10px, transparent 10px), linear-gradient(black 30px, white 30px, white 31px, black 31px);
+    background-size: 100% 100%, 100% 100%, 100% 50px;
+    line-height: 50px;
+    padding-top: 31px;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1199.98px) {
+
+}
