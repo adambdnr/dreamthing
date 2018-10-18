@@ -42,7 +42,7 @@
 }
 
 .blue-text {
-  color: blue;
+  color: blue !important;
 }
 
 .black-text {
@@ -155,9 +155,7 @@ button {
 .wrapper {
   display: flex;
   overflow: hidden;
-  height: 100vh;
-  margin-top: -100px;
-  padding-top: 100px;
+  height: 90vh;
   position: relative;
   width: 100%;
   backface-visibility: hidden;

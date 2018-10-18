@@ -15,9 +15,9 @@
 <div class="container">
     <div class="row">
         <div class="col-12 d-flex d-md-none justify-content-between narrow-div">
-            <a class="about-plus black-text blue-background">+</a>
+            <a class="about-plus blue-text">+</a>
             <div>
-                <a class="about-arrow black-text blue-background smaller-margin-right">?</a>
+                <a class="about-arrow blue-text smaller-margin-right">?</a>
                 <span></span>
             </div>
         </div>
