@@ -266,10 +266,10 @@ textarea {
   box-shadow: none;
   overflow: hidden;
 
-  //background-image: -webkit-linear-gradient(to right, white 10px, transparent 10px), -webkit-linear-gradient(to left, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-  //background-image: -moz-linear-gradient(to right, white 10px, transparent 10px), -moz-linear-gradient(to left, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-  //background-image: -ms-linear-gradient(to right, white 10px, transparent 10px), -ms-linear-gradient(to left, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-  //background-image: -o-linear-gradient(to right, white 10px, transparent 10px), -o-linear-gradient(to left, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+  background-image: -webkit-linear-gradient(to right, black 10px, transparent 10px), -webkit-linear-gradient(to left, black 10px, transparent 10px), -webkit-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+  background-image: -moz-linear-gradient(to right, black 10px, transparent 10px), -moz-linear-gradient(to left, black 10px, transparent 10px), -moz-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+  background-image: -ms-linear-gradient(to right, black 10px, transparent 10px), -ms-linear-gradient(to left, black 10px, transparent 10px), -ms-linear-gradient(black 30px, white 30px, white 31px, black 31px);
+  background-image: -o-linear-gradient(to right, black 10px, transparent 10px), -o-linear-gradient(to left, black 10px, transparent 10px), -o-linear-gradient(black 30px, white 30px, white 31px, black 31px);
   background-image: linear-gradient(to right, black 10px, transparent 10px), linear-gradient(to left, black 10px, transparent 10px), linear-gradient(black 30px, white 30px, white 31px, black 31px);
   background-size: 100% 100%, 100% 100%, 100% 96px;
   line-height: 96px;
@@ -318,7 +318,9 @@ textarea {
   .down-arrow {
     background: url("/images/blackarrow.png") no-repeat top left;
     background-color: blue;
-    background-size: 100% 100%;
+    background-size: 25px 25px;
+    background-position: center;
+    padding: 19px;
     display: inline-block;
     height: 20px;
     width: 20px;
@@ -362,7 +364,7 @@ textarea {
   }
 
   .submit-up-left {
-    top: -65px;
+    top: -60px;
     right: 0;
   }
 

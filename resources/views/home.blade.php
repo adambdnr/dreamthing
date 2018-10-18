@@ -21,8 +21,8 @@
     </div>
     <div class="row wrapper">
         <div class="col-12 col-md-8 left-side">
-            @if(count($data['dreams']) > 0)
-                @foreach($data['dreams'] as $key=>$dream)
+            @if(count($dreamsToReturn) > 0)
+                @foreach($dreamsToReturn as $key=>$dream)
                     <p class="dream-id small-padding">Álom {{sprintf("%03d", $key+1)}}</p>
                     <p class="dream-body small-padding">{!!$dream->dream!!}</p>
                 @endforeach
@@ -37,7 +37,7 @@
             <div class="position-vertical-text position-absolute d-flex justify-content-end">
                 <p class="blue-text rotate">Termelőeszközök</p>
             </div>
-            <p class="position-absolute position-percentage blue-text"><? $data['disco']?>%</p>
+            <p class="position-absolute position-percentage blue-text">{{$replacement}}%</p>
         </div>
     </div>
 </div>
@@ -45,7 +45,7 @@
     <div class="row d-block d-sm-block d-md-none">
         <div class="d-flex justify-content-around footer mt-2">
             <p class="black-text">Termelőeszközök</p>
-            <p class="black-text"><? $data['disco']?>%</p>
+            <p class="black-text">{{$replacement}}%</p>
         </div>
     </div>
 </div>

@@ -10783,7 +10783,9 @@ textarea {
   .down-arrow {
     background: url("/images/blackarrow.png") no-repeat top left;
     background-color: blue;
-    background-size: 100% 100%;
+    background-size: 25px 25px;
+    background-position: center;
+    padding: 19px;
     display: inline-block;
     height: 20px;
     width: 20px;
@@ -10818,7 +10820,7 @@ textarea {
   }
 
   .submit-up-left {
-    top: -65px;
+    top: -60px;
     right: 0;
   }
 

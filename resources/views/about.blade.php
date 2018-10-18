@@ -23,10 +23,10 @@
     </div>
     <div class="row">
         <div class="col-12 d-none d-md-flex justify-content-between">
-            <a href="/" class="about-questionmark outline">+</a>
+            <a href="/" class="about-questionmark outline">?</a>
             <div>
-                <a href="/" class="about-arrow"><span class="up-arrow"></span></a>
-                <a href="/upload" class="about-plus medium-margin-left">?</a>
+                <a href="/upload" class="about-arrow"><span class="up-arrow"></span></a>
+                <a href="/" class="about-plus medium-margin-left">+</a>
             </div>
         </div>
     </div>

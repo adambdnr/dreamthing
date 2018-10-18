@@ -35970,7 +35970,7 @@ function startScrollDown() {
 
     leftSide.animate({
         scrollTop: leftSide[0].scrollHeight
-    }, 1000000, "linear");
+    }, 12000000, "linear");
 }
 
 function goToTop() {
