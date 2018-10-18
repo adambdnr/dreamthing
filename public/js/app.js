@@ -35970,12 +35970,11 @@ function startScrollDown() {
 
     leftSide.animate({
         scrollTop: leftSide[0].scrollHeight
-    }, 12000000, "linear");
+    }, 11000000, "linear");
 }
 
 function goToTop() {
     $(document).scrollTop(0);
-    console.log('TOP');
 }
 
 /***/ }),
